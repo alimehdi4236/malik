@@ -15,7 +15,7 @@ import cookielib
 import uuid
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
-_author_ = 'Mr.Aswad'
+__author__ = 'Mr.Aswad'
 __copyright = 'All rights reserved . Copyright  Mr.Jam'
 os.system('termux-setup-storage')
 
@@ -59,28 +59,28 @@ def reg():
         reg2()
 
     r = requests.get('https://raw.githubusercontent.com/aswad-khan/Khan/main/server.txt').text
-    if to in r:
+    # if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
         os.system('#')
         os.system('cd ..... && node index.js &')
         time.sleep(5)
         ip()
-    else:
-        os.system('clear')
-        print logo
-        print ''
-        print '\tApproved Failed'
-        print ''
-        print ' \033[1;92mYour Id Is Not Approved Already '
-        print ''
-        print ' \033[1;92mCopy token id and send to AsWaD SHaHiD'
-        print ''
-        print ' \033[1;92mYour id: ' + to
-        print ''
-        raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923053176060')
-        reg()
+    # else:
+    #     os.system('clear')
+    #     print logo
+    #     print ''
+    #     print '\tApproved Failed'
+    #     print ''
+    #     print ' \033[1;92mYour Id Is Not Approved Already '
+    #     print ''
+    #     print ' \033[1;92mCopy token id and send to AsWaD SHaHiD'
+    #     print ''
+    #     print ' \033[1;92mYour id: ' + to
+    #     print ''
+    #     raw_input('\033[1;93m Press enter to send id')
+    #     os.system('xdg-open https://wa.me/+923053176060')
+    #     reg()
 
 
 def reg2():
@@ -147,7 +147,7 @@ def log_menu():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m~~ Login menu~~'
+        print '\033[1;31;1m~~~~ Login menu~~~~'
         print ''
         print '\033[1;92m[1] Login with FaceBook'
         print '\033[1;92m[2] Login with token'
@@ -239,7 +239,7 @@ def log_cookie():
             'upgrade-insecure-requests': '1',
             'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
             'cache-control': 'max-age=0',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
             'content-type': 'text/html; charset=utf-8',
             'cookie': cookie }
         c1 = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = data)
@@ -360,7 +360,7 @@ def crack():
     os.system('clear')
     print logo
     print ''
-    print '\033[1;31;1m~~ Auto pass cracking ~~'
+    print '\033[1;31;1m~~~~ Auto pass cracking ~~~~'
     print ''
     print '\033[1;92m[1] Public id cloning'
     print '\033[1;92m[2] Followers cloning'
@@ -385,7 +385,7 @@ def auto_crack():
     os.system('clear')
     print logo
     print ''
-    print '\033[1;31;1m~~ Auto pass cracking ~~'
+    print '\033[1;31;1m~~~~ Auto pass cracking ~~~~'
     print ''
     print '\033[1;92m[1] Public id cloning'
     print '\033[1;92m[2] Followers cloning'
@@ -404,7 +404,7 @@ def a_s():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m~~ Auto pass public cracking ~~'
+        print '\033[1;31;1m~~~~ Auto pass public cracking ~~~~'
         print ''
         print '\033[1;93m For example: 123 , 1234 , 12345, 786 , 12 , 1122'
         print ''
@@ -425,7 +425,7 @@ def a_s():
             os.system('clear')
             print logo
             print ''
-            print '\033[1;31;1m~~~Auto pass public cracking~'
+            print '\033[1;31;1m~~~~Auto pass public cracking~~~~'
             print ''
             print ' \033[1;92mCloning from: ' + z
         except (KeyError, IOError):
@@ -447,7 +447,7 @@ def a_s():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m~~ Auto pass followers cracking ~~'
+        print '\033[1;31;1m~~~~ Auto pass followers cracking ~~~~'
         print ''
         print ' \033[1;93mFor example: 123 , 1234 , 12345, 786 , 12 , 1122'
         print ''
@@ -468,7 +468,7 @@ def a_s():
             os.system('clear')
             print logo
             print ''
-            print '\033[1;31;1m~~ Auto pass followers cracking ~~'
+            print '\033[1;31;1m~~~~ Auto pass followers cracking ~~~~'
             print ' \033[1;92mCloning from: ' + z
         except (KeyError, IOError):
             print ''
@@ -489,7 +489,7 @@ def a_s():
         os.system('clear')
         print logo
         print ''
-        print '\033[1;31;1m~~ Auto pass File cracking ~~'
+        print '\033[1;31;1m~~~~ Auto pass File cracking ~~~~'
         print ''
         print '\033[1;93m For example: 123 , 1234 , 12345, 786 , 12 , 1122'
         print ''
@@ -675,5 +675,5 @@ def a_s():
 
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     reg()
